@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="The Learning Workshop" />
+
+  <title>
+      
+       &middot; The Learning Workshop
+      
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+  <link rel="manifest" href="/assets/favicon/site.webmanifest">
+  <link rel="mask-icon" href="/assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-96119946-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-120448221-1');
+  </script>
+
+  <script type="text/javascript">
+    window.onload = function() {
+      Array.prototype.slice.call(document.querySelectorAll("a")).forEach(function(a) {
+        if (a.getAttribute('href').startsWith("http")) {
+          a.target = "_blank";
+        }
+      });
+
+
+      Array.prototype.slice.call(document.querySelectorAll("iframe.deps")).forEach(function(iframe) {
+        // Add CSS to all deps iframes
+        css = 'a { cursor: pointer; } div { color: #4a9ae1; } div:hover { text-decoration: underline; }';
+        var style = document.createElement('style');
+        style.appendChild(document.createTextNode(css));
+        iframe.contentDocument.children[0].appendChild(style);
+
+        // Fix size of SVG container
+        svg = iframe.contentDocument.querySelector("svg");
+        if (svg) {
+          scale = parseInt(iframe.width) / parseInt(svg.getAttribute("width"));
+          transform = "scale(" + scale + ")";
+          gElement = svg.querySelector("g");
+
+          gElement.style["transform"] = transform;
+          gElement.style["-ms-transform"] = transform;
+          gElement.style["-moz-transform"] = transform;
+          gElement.style["-o-transform"] = transform;
+          gElement.style["-webkit-transform"] = transform;
+
+          gElement.style["transform-origin"] = "0 0";
+          gElement.style["-ms-transform-origin"] = "0 0";
+          gElement.style["-moz-transform-origin"] = "0 0";
+          gElement.style["-o-transform-origin"] = "0 0";
+          gElement.style["-webkit-transform-origin"] = "0 0";
+
+          iframe.height = svg.height.baseVal.value * scale;
+          iframe.scrolling = "no";
+        }
+
+        // Fix links in embedded SVG files, used to navigate between dependencies
+        Array.prototype.slice.call(iframe.contentDocument.querySelectorAll("a")).forEach(function(a) {
+          if (a.getAttribute("xlink:href")) {
+            a.setAttribute("xlink:href", window.location.href.split("#")[0] + a.getAttribute("xlink:href"));  
+            a.setAttribute("target", "_parent");
+          }
+        });
+      });
+    };
+  </script>
+</head>
+
+
+  <body>
+    <nav class="nav">
+      <div class="nav-container">
+        <a href="/">
+          <img class="nav-title" src="/assets/title-img.svg " width=158 height=89/>
+        </a>
+        <ul>
+          <li><a href="/about">About</a></li>
+          <li><a href="/">Posts</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <style type="text/css" media="screen">
+  .container {
+    margin: 10px auto;
+    max-width: 600px;
+    text-align: center;
+  }
+  h1 {
+    margin: 30px 0;
+    font-size: 4em;
+    line-height: 1;
+    letter-spacing: -1px;
+  }
+</style>
+
+<div class="container">
+  <h1>404</h1>
+
+  <p><strong>Page not found :(</strong></p>
+  <p>The requested page could not be found.</p>
+</div>
+
+    </main>
+
+  </body>
+</html>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-02-06T08:09:51-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">The Learning Workshop</title><subtitle>The Learning Workshop is an annual event for strong, junior researchers in machine learning to discuss unpublished ideas.</subtitle><entry><title type="html">The Inaugural Event</title><link href="http://localhost:4000/2020/inaugural-event" rel="alternate" type="text/html" title="The Inaugural Event" /><published>2020-02-05T22:25:21-05:00</published><updated>2020-02-05T22:25:21-05:00</updated><id>http://localhost:4000/2020/inaugural-event</id><content type="html" xml:base="http://localhost:4000/2020/inaugural-event">&lt;h1 id=&quot;what-is-this&quot;&gt;What is this?&lt;/h1&gt;
+&lt;p&gt;The Learning Workshop at Snowbird, which became NeurIPS, was a place for strong, 
+junior researchers to discuss exciting and unpublished ideas. We planned this 
+workshop with that in mind:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Every attendee will give a 15 minute presentation. Talks not be on published 
+work and should focus on problems rather than solutions, specifically those in 
+which you believe we could make meaningful progress in the medium term (2-4 years).&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;There will be two group-wide discussion sessions each day targeting the most 
+important problems in machine learning.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;There will be plenty of time for spontaneous discussions.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;All of this will be off the record.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;when-and-where-is-this&quot;&gt;When and Where is this?&lt;/h1&gt;
+
+&lt;p&gt;The inaugural event will be in Puerto Escondido, Mexico, on March 3rd - 7th. 
+Attendees will arrive on the night of the 3rd and leave on the morning of the 
+7th, with the workshop running on the 4th, 5th, and 6th.&lt;/p&gt;</content><author><name>lw</name></author><summary type="html">What is this? The Learning Workshop at Snowbird, which became NeurIPS, was a place for strong, junior researchers to discuss exciting and unpublished ideas. We planned this workshop with that in mind:</summary></entry></feed>

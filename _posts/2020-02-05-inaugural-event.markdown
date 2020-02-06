@@ -3,6 +3,9 @@ layout: post
 title:  "The Inaugural Event"
 date:   2020-02-05 22:25:21 -0500
 categories: event
+author: lw
+blurb: "Read for more information on the inaugural event in March, 2020."
+hidden: false
 ---
 # What is this?
 The Learning Workshop at Snowbird, which became NeurIPS, was a place for strong, 
@@ -22,6 +25,6 @@ important problems in machine learning.
 
 # When and Where is this?
 
-Puerto Escondido, Mexico, March 3rd - 7th. Expect to arrive on the night of the 
-3rd and leave on the morning of the 7th, with the workshop running on the 4th, 
-5th, and 6th. 
+The inaugural event will be in Puerto Escondido, Mexico, on March 3rd - 7th. 
+Attendees will arrive on the night of the 3rd and leave on the morning of the 
+7th, with the workshop running on the 4th, 5th, and 6th.
